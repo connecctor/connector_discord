@@ -54,6 +54,7 @@ local roles = exports.connector_discord:GetDiscordRoles(playerId)
 -- Check if player has a specific role (can check for singular or multiple)
 
 ```local hasRole = exports.connector_discord:HasDiscordRole(playerId, roleId)```
+
 ```local hasAnyRole = exports.connector_discord:HasDiscordRole(playerId, {roleId1, roleId2, roleId3})```
 
 -- Get players Discord username
