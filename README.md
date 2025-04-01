@@ -49,7 +49,8 @@ Config = {
 # Usage / Exports 🔨
 
 -- Get all Discord roles for a player
-local roles = exports.connector_discord:GetDiscordRoles(playerId)
+
+```local roles = exports.connector_discord:GetDiscordRoles(playerId)```
 
 -- Check if player has a specific role (can check for singular or multiple)
 
