@@ -52,20 +52,20 @@ Config = {
 local roles = exports.connector_discord:GetDiscordRoles(playerId)
 
 -- Check if player has a specific role (can check for singular or multiple)
-local hasRole = exports.connector_discord:HasDiscordRole(playerId, roleId)
-local hasAnyRole = exports.connector_discord:HasDiscordRole(playerId, {roleId1, roleId2, roleId3})
+```local hasRole = exports.connector_discord:HasDiscordRole(playerId, roleId)```
+```local hasAnyRole = exports.connector_discord:HasDiscordRole(playerId, {roleId1, roleId2, roleId3})```
 
 -- Get players Discord username
-local username = exports.connector_discord:GetDiscordName(playerId)
+```local username = exports.connector_discord:GetDiscordName(playerId)```
 
 -- Get players Discord avatar URL
-local avatar = exports.connector_discord:GetDiscordAvatar(playerId)
+```local avatar = exports.connector_discord:GetDiscordAvatar(playerId)```
 
 -- Get players Discord ID
-local discordId = exports.connector_discord:GetDiscordId(playerId)
+```local discordId = exports.connector_discord:GetDiscordId(playerId)```
 
 -- Get all Discord data for a player
-local discordData = exports.connector_discord:GetDiscordUser(playerId)
+```local discordData = exports.connector_discord:GetDiscordUser(playerId)```
 -- Returns: { name = string, avatar = string, roles = table }
 
 ##
