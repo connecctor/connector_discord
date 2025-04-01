@@ -71,7 +71,9 @@ Config = {
 ```local discordId = exports.connector_discord:GetDiscordId(playerId)```
 
 -- Get all Discord data for a player
+
 ```local discordData = exports.connector_discord:GetDiscordUser(playerId)```
+
 -- Returns: { name = string, avatar = string, roles = table }
 
 ##
