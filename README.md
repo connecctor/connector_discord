@@ -17,8 +17,8 @@
 
 1. Download the latest release or clone this repository
 2. Place the `connector_discord` folder in your server's `resources` directory
-3. Add `ensure connector_discord` to your server.cfg
-4. Configure the `config.lua` file with your Discord bot token and server ID
+4. Configure the `config.lua` file with your Discord bot token and server ID ( can also config caching )
+3. Add `ensure connector_discord` to your server.cfg, Restart the server and enjoy !
 
 ##
 
@@ -115,10 +115,15 @@ end)
 # Setup Discord Bot 🤖
 
 - Go to [Discord Developer Portal](https://discord.com/developers/applications) and click `New Application`
+
 - Set the bot name and click the TOS checkbox then press `create`, Now click `bot` scroll down to Privileged Gateway Intents
+
 - Make sure discord bot has all 3 intents ( Presence Intent, Server Members Intent, Message Content Intent )
+
 - Below you will see `Default Install Settings` click scopes and make sure `bot` & `applications.commands` are selected
+
 - And then for permissions set it to `Administrator` after this click `OAuth2` click `bot` & `applications.commands` then copy the URL
+
 - After copying the URL paste it in your browser or in your discord and click it, invite the bot to your server, Now go back to developer portal and reset bot `token`
 
 ##
