@@ -1,5 +1,5 @@
 ### 📝 Docs
-- Website in developemtn
+- Website in development
 - For Now Join The Discord - https://discord.gg/connector
 
 ##
