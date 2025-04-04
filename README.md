@@ -1,5 +1,6 @@
 ### 📝 Docs
-- Visit : https://connector.mintlify.app
+- Website in developemtn
+- For Now Join The Discord - https://discord.gg/connector
 
 ##
 
@@ -130,7 +131,7 @@ end)
 
 # Support 🔗
 
-- Need support or ran into a error, Join my [Discord Server](https://discord.gg/obfuscate)
+- Need support or ran into a error, Join my [Discord Server](https://discord.gg/connector)
 - Feel like you could improve the script, well then please submit a pull request and we will review **ASAP**
 
 ##
