@@ -62,7 +62,7 @@ local Ready = false
 
 local function RequestDiscordData(target, onlyRoles)
     if not RateLimiter() then
-        print(('[CONNECTOR DISCORD] Rate limit reached for player %s'):format(target))
+        print(('[CONNECTOR_DISCORD] Rate limit reached for player %s'):format(target))
         return nil
     end
 
@@ -160,12 +160,12 @@ RegisterNetEvent('connector_discord:server:playerConnected', function()
     local discordData = cachedData or RequestDiscordData(src)
 
     if not discordData then
-        print(('[CONNECTOR DISCORD] Player %s (ID:%s) not in Discord'):format(GetPlayerName(src), src))
+        print(('[CONNECTOR_DISCORD] Player %s (ID:%s) not in Discord'):format(GetPlayerName(src), src))
         return
     end
 
     UpdatePlayerCache(src, discordData)
-    print(('[CONNECTOR DISCORD] Player %s (ID:%s) has %d roles'):format(
+    print(('[CONNECTOR_DISCORD] Player %s (ID:%s) has %d roles'):format(
         GetPlayerName(src), src, #discordData.roles
     ))
 end)
@@ -206,7 +206,7 @@ end
 
 CreateThread(function()
     if not ValidString(Config.Token) or not ValidString(Config.Guild) then
-        print('[CONNECTOR DISCORD] ERROR: Invalid config')
+        print('[CONNECTOR_DISCORD] ERROR: Invalid config')
         return
     end
 
@@ -218,18 +218,18 @@ CreateThread(function()
 
     PerformHttpRequest(url, function(errorCode, data, _)
         if errorCode ~= 200 then
-            print('[CONNECTOR DISCORD] ERROR: Discord API failed')
+            print('[CONNECTOR_DISCORD] ERROR: Discord API failed')
             return
         end
 
         local guildData = json.decode(data)
         if not guildData then
-            print('[CONNECTOR DISCORD] ERROR: Invalid response')
+            print('[CONNECTOR_DISCORD] ERROR: Invalid response')
             return
         end
 
         Ready = true
-        print(('[CONNECTOR DISCORD] Connected to Discord server: %s'):format(
+        print(('[CONNECTOR_DISCORD] Connected to Discord server: %s'):format(
             RemoveEmojis(guildData.name)
         ))
     end, 'GET', '', headers)
