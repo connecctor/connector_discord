@@ -115,6 +115,7 @@ local function RequestDiscordData(target, onlyRoles)
                     ) or nil
             end
         end
+        response.discordID = discordID
         promise:resolve(response)
     end, 'GET', '', headers)
 
@@ -194,6 +195,11 @@ local function GetPlayerAvatar(target)
     return cached and cached.avatar or nil
 end
 
+local function GetPlayerDUID(target)
+    local cached = GetCachedPlayerData(target)
+    return cached and cached.discordID or nil
+end
+
 local function GetPlayerData(target)
     return GetCachedPlayerData(target)
 end
@@ -233,4 +239,5 @@ exports('GetPlayerRoles', GetPlayerRoles)
 exports('PlayerHasRole', PlayerHasRole)
 exports('GetPlayerUsername', GetPlayerUsername)
 exports('GetPlayerAvatar', GetPlayerAvatar)
+exports('GetPlayerDUID', GetPlayerDUID)
 exports('GetPlayerData', GetPlayerData)
