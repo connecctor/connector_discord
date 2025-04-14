@@ -1,6 +1,6 @@
 ### 📝 Docs
 
-- To view the usage and documentation of the script click the text here -> [Docs](https://connector-scripts.gitbook.io/connector-scripts)
+- To view the usage and documentation of the script click the text here -> [Docs](https://connector-scripts.gitbook.io/connector-scripts/free-assets/discord-api)
 
 ##
 
