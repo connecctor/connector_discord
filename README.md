@@ -1,6 +1,6 @@
 ### 📝 Docs
-- Website in development
-- For Now Join The Discord - https://discord.gg/connector
+
+- To view the usage and documentation of the script click the text here -> [Docs](https://connector-scripts.gitbook.io/connector-scripts)
 
 ##
 
@@ -23,13 +23,7 @@
 
 ##
 
-## Usage / Documentation 📖
-
-- To view the usage and documentation of the script click the text here -> [Docs](https://connector-scripts.gitbook.io/connector-scripts)
-
-##
-
-# Support 🔗
+## Support 🔗
 
 - Need support or ran into a error, Join my [Discord Server](https://discord.gg/settings)
 - Feel like you could improve the script, well then please submit a pull request and we will review **ASAP**
